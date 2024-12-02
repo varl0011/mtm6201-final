@@ -169,7 +169,7 @@ i {
     color: black;
 }
 
-.portfolio-page-content {
+.portfolio-page-content, .about-page-content, .contact-page-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,7 +177,7 @@ i {
 
 }
 
-.portfolio-page-content h1 {
+.portfolio-page-content h1, .about-page-content h1, .contact-page-content h1 {
     color: var(--main-color);
     margin: 10px auto;
 }
@@ -189,3 +189,23 @@ i {
 .portfolio-page-content p {
      width: 95%;
 }
+
+.about-page-content p {
+    margin: 20px auto;
+    width: 95%;
+}
+
+.about-page-content hr{
+    border: solid var(--main-color) 3.8px;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.contact-page-content iframe {
+    width: 300px;
+    height: 300px;
+    border: 5px var(--main-color) solid;
+    border-radius: 20px;
+}
+
+
