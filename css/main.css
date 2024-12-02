@@ -1,0 +1,160 @@
+:root {
+    --text-color: #343434;
+    --navbar-color: #F7F7F7;
+    --main-color: #5C61FF;
+
+}
+
+body {
+    color: var(--text-color);
+    font-family: "Poppins";
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav {
+    background-color: var(--navbar-color);
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+#logo {
+    height: 80px;
+}
+
+.dropdown-menu-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown{
+    display: inline-block;
+    
+}
+.dropdown button{
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown-icon{
+    height: 40px;
+}
+.dropdown .content{
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.page-content {
+  
+}
+
+#hero-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text h2, .text h1, .text p {
+   margin: 0;
+   line-height: 1.1;
+}
+
+.text p {
+    margin-top: 10px;
+}
+
+.colored-text {
+    display: flex;
+    gap: 8px;
+}
+
+.h2-purple {
+    color: var(--main-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    margin: 0 20px;
+}
+
+.learn-btn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+    padding: 9px 25px;
+    transition: 0.4s all ease-in-out;
+    font-weight: 800;
+    font-size: 22px;
+    width: 130px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.learn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.portfolio-btn {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #9092D0;
+    padding: 9px 25px;
+    transition: 0.4s all ease-in-out;
+    font-weight: 800;
+    font-size: 24px;
+    font-size: 22px;
+    width: 130px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.portfolio:hover {
+    background-color: var(--main-color);
+    color: white;
+}
