@@ -11,17 +11,17 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -29,7 +29,7 @@ nav {
     background-color: var(--navbar-color);
     display: flex;
     flex-direction: row;
-    height: 60px;
+    height: 80px;
 }
 
 #logo {
@@ -77,20 +77,25 @@ nav {
     background-color: hsl(0, 0%, 90%);
 }
 
+
 .page-content {
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto;
+    width: 90%;
 }
 
 #hero-img {
     width: 100%;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -117,7 +122,6 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     gap: 0px;
-    margin: 0 20px;
 }
 
 .learn-btn {
@@ -158,3 +162,10 @@ nav {
     background-color: var(--main-color);
     color: white;
 }
+
+i {
+    margin-top: 15px;
+    font-size: 50px;
+    color: black;
+}
+
