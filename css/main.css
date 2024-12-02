@@ -169,3 +169,23 @@ i {
     color: black;
 }
 
+.portfolio-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.portfolio-page-content h1 {
+    color: var(--main-color);
+    margin: 10px auto;
+}
+
+.portfolio-img {
+    width: 95%;
+}
+
+.portfolio-page-content p {
+     width: 95%;
+}
