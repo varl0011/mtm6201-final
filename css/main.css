@@ -31,57 +31,62 @@ p {
     font-weight: 500;
 }
 
-nav {
-    background-color: var(--navbar-color);
-    display: flex;
-    flex-direction: row;
-    height: 80px;
-}
-
 #logo {
     height: 80px;
 }
 
-.dropdown-menu-btn{
+.navv {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.navv ul {
+    width: 100%;
+    list-style: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.dropdown{
-    display: inline-block;
-    
+.navv li {
+    height: 50px;
 }
-.dropdown button{
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    margin-left: 120px;
-}
-.dropdown a{
-    display: block;
-    color: black;
+
+.navv a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
     text-decoration: none;
-    padding: 10px 15px;
+    align-items: center;
+    color: black;
 }
 
-.dropdown-icon{
-    height: 40px;
+.navv a:hover {
+    background-color: #f0f0f0;
 }
-.dropdown .content{
-    display: none;
-    background-color: hsl(0, 0%, 95%);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+
+.navv li:first-child {
+    margin-right: auto;
 }
-.dropdown:hover .content{
-    display: block;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
 }
-.dropdown:hover button{
-    background-color: hsl(0, 0%, 70%);
-}
-.dropdown a:hover{
-    background-color: hsl(0, 0%, 90%);
+
+.sidebar li {
+    width: 100%;
 }
 
 
@@ -559,40 +564,6 @@ footer h3 {
 
     footer {
         margin-top: 242px;
-    }
-
-    .navv {
-        background-color: white;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-    }
-
-    .navv ul {
-        width: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .navv li {
-        height: 50px;
-    }
-
-    .navv a {
-        height: 100%;
-        padding: 0 30px;
-        display: flex;
-        text-decoration: none;
-        align-items: center;
-        color: black;
-    }
-
-    .navv a:hover {
-        background-color: #f0f0f0;
-    }
-
-    .sidebar {
-        position: fixed;
     }
 
 }
