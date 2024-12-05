@@ -15,27 +15,27 @@
 </head>
 
 <body>
-    <main>
-        <nav>
-            <header>
+    <main role="main">
+        <nav role="navigation">
+            <header role="banner">
                 <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
             </header>
             <div class="dropdown-menu-btn">
                 <div class="dropdown">
                     <button><img src="images/dropdown.png" alt="dropdown-icon" class="dropdown-icon"></button>
-                    <div class="content">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
+                    <div class="content" role="menu">
+                        <a href="index.html" role="menuitem">Home</a>
+                        <a href="portfolio.html" role="menuitem">Portfolio</a>
+                        <a href="about.html" role="menuitem">About</a>
+                        <a href="contact.html" role="menuitem">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="page-content">
-            <img src="/images/home_tablet.svg" id="hero-img" alt="hero-img">
+            <img src="images/home_tablet.svg" id="hero-img" alt="hero-img">
             <div class="width-wrapper">
-                <section class="text">
+                <section class="text" role="region" aria-labelledby="intro-heading">
                     <h2>Hello, It’s me</h2>
                     <h1>Rodion Varlamov</h1>
                     <section class="colored-text">
@@ -46,19 +46,19 @@
                         My expertise is to create and design websites,
                         logotypes, banners and many more...</p>
                 </section>
-                <section class="buttons">
+                <section class="buttons" role="region" aria-label="Main action buttons">
                     <a href="about.html" class="learn-btn">Learn more</a>
                     <a href="portfolio.html" class="portfolio-btn">Portfolio</a>
                 </section>
-                <section class="socials">
-                    <a href="https://www.instagram.com/" target="_blank">
+                <section class="socials" role="region" aria-label="Social media links">
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="https://www.linkedin.ca/" target="_blank">
+                    <a href="https://www.linkedin.ca/" target="_blank" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </section>
@@ -67,7 +67,7 @@
     </main>
     <footer>
         <h3>&copy2024 Rodion Varlamov</h3>
-            <section class="socials-footer">
+            <section class="socials-footer" role="region" aria-label="Footer social media links">
                 <a href="https://www.instagram.com/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -79,7 +79,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </section>
-            <section class="buttons-footer">
+            <section class="buttons-footer" role="region" aria-label="Footer navigation links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>

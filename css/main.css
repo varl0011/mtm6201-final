@@ -5,7 +5,7 @@
 
 }
 
-body {
+html,body {
     color: var(--text-color);
     font-family: "Poppins";
     margin: 0;
@@ -296,22 +296,22 @@ footer h3 {
 @media (min-width: 768px){
 
     h1 {
-        font-size: 1.7rem;
+        font-size: 2.2rem;
         font-weight: 900;
     }
     
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         font-weight: 600;
     }
     
     h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 550;
     }
     
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 
@@ -319,7 +319,6 @@ footer h3 {
         width: 350px;
         height: 350px;
     }
-
 
     .page-content {
         display: flex;
@@ -345,6 +344,7 @@ footer h3 {
     }
 
     .socials-footer a i{
+        display: inline-block;
         color: white;
         font-size: 40px;
     }
@@ -445,4 +445,155 @@ footer h3 {
     }
 }
 
+@media (min-width: 1100px) {
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 550;
+    }
+    
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    nav {
+        height: 90px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .learn-btn, .portfolio-btn{
+        margin: 0;
+    }
+
+    .buttons-footer {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .socials-footer {
+        margin-right: 1000px;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    .text p{
+        width: 70%;
+    }
+
+    /* Portfolio */
+
+    .portfolio-img, .portfolio-sec-img {
+        width: 60%;
+    }
+
+    .portfolio-img {
+        justify-self: end;
+        align-self: end;
+    }
+
+    .portfolio-sec-img {
+        justify-self: end;
+        align-self: end;
+    }
+
+    .portfolio-page-content p:nth-child(4) {
+        justify-self: start;
+        align-self: center;
+    }
+
+    .portfolio-page-content p {
+        width: 70%;
+    }
+
+    /* Contact */
+
+    .contact-page-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+        margin-bottom: 142px;
+    }
+
+    .form-contact {
+        width: 20%;
+    }
+
+    .contact-page-content iframe {
+        width: 600px;
+        height: 500px;
+    }
+
+    .about-page-content {
+        margin-bottom: 200px;
+    }
+
+    .about-page-text {
+        width: 500px;
+    }
+
+    footer {
+        margin-top: 242px;
+    }
+
+    .navv {
+        background-color: white;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    }
+
+    .navv ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navv li {
+        height: 50px;
+    }
+
+    .navv a {
+        height: 100%;
+        padding: 0 30px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        color: black;
+    }
+
+    .navv a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .sidebar {
+        position: fixed;
+    }
+
+}
 

@@ -16,18 +16,18 @@
 
 <body>
     <main>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="logo" class="logo" id="logo">
-                <a href="index.html"></a>
-            </div>
+        <nav role="navigation">
+            <header role="banner">
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
+            </header>
             <div class="dropdown-menu-btn">
                 <div class="dropdown">
                     <button><img src="images/dropdown.png" alt="dropdown-icon" class="dropdown-icon"></button>
-                    <div class="content">
-                        <a href="">Apple</a>
-                        <a href="">Orange</a>
-                        <a href="">Banana</a>
+                    <div class="content" role="menu">
+                        <a href="index.html" role="menuitem">Home</a>
+                        <a href="portfolio.html" role="menuitem">Portfolio</a>
+                        <a href="about.html" role="menuitem">About</a>
+                        <a href="contact.html" role="menuitem">Contact</a>
                     </div>
                 </div>
             </div>
