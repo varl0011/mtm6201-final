@@ -16,33 +16,40 @@
 
 <body>
     <main role="main">
-        <nav role="navigation">
-            <header role="banner">
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
+        <nav role="navigation" aria-label="Main Navigation">
+            <header role="banner" aria-label="Site Banner">
+                <a href="#main-content" class="skip-links">skip navigation</a>
+                <a href="#main-content" class="skip-links">read about me</a>
+                <a href="#socials" class="skip-links">go to socials</a>
+                <a href="#footer" class="skip-links">go to footer</a>
+
+                <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo" id="logo"></a>
             </header>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
-                            viewBox="0 -960 960 960" width="26px" fill="#343434">
+            <ul class="sidebar" role="menu" aria-label="Sidebar Navigation">
+                <li onclick=hideSidebar() role="menuitem"><a href="#" aria-label="Close Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></a></li>
-                <li class="hideSidebar"><a href="index.html">Home</a></li>
-                <li class="hideSidebar"><a href="portfolio.html">Portfolio</a></li>
-                <li class="hideSidebar"><a href="about.html">About</a></li>
-                <li class="hideSidebar"><a href="contact.html">Contact</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="contact.html">Contact</a></li>
             </ul>
-            <ul>
-                <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
-                <li class="hideOnMobile"><a href="about.html">About</a></li>
-                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-                <li onclick=showSidebar() class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434">
+            <ul role="menubar" aria-label="Desktop Navigation">
+                <li class="hideOnMobile" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="contact.html">Contact</a></li>
+                <li onclick=showSidebar() class="hideSidebar"><a href="#" aria-label="Open Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
             </ul>
         </nav>
-        <div class="page-content">
+        <div class="page-content" id="main-content">
             <img src="images/home_tablet.svg" id="hero-img" alt="hero-img">
             <div class="width-wrapper">
                 <section class="text" role="region" aria-labelledby="intro-heading">
@@ -60,7 +67,7 @@
                     <a href="about.html" class="learn-btn">Learn more</a>
                     <a href="portfolio.html" class="portfolio-btn">Portfolio</a>
                 </section>
-                <section class="socials" role="region" aria-label="Social media links">
+                <section class="socials" role="region" aria-label="Social media links" id="socials">
                     <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
@@ -75,7 +82,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo" id="footer">
         <h3>&copy2024 Rodion Varlamov</h3>
         <section class="socials-footer" role="region" aria-label="Footer social media links">
             <a href="https://www.instagram.com/" target="_blank">

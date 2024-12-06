@@ -16,54 +16,69 @@
 
 <body>
     <main>
-        <nav role="navigation">
-            <header role="banner">
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
+        <nav role="navigation" aria-label="Main Navigation">
+            <header role="banner" aria-label="Site Banner">
+                <a href="#main-content" class="skip-links">skip navigation</a>
+                <a href="#contentinfo" class="skip-links">go to footer</a>
+
+                <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo" id="logo"></a>
             </header>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li class="hideSidebar"><a href="index.html">Home</a></li>
-                    <li class="hideSidebar"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="hideSidebar"><a href="about.html">About</a></li>
-                    <li class="hideSidebar"><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul>
-                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                    <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="hideOnMobile"><a href="about.html">About</a></li>
-                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-                    <li onclick=showSidebar() class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
+            <ul class="sidebar" role="menu" aria-label="Sidebar Navigation">
+                <li onclick=hideSidebar() role="menuitem"><a href="#" aria-label="Close Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="hideSidebar" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul role="menubar" aria-label="Desktop Navigation">
+                <li class="hideOnMobile" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="contact.html">Contact</a></li>
+                <li onclick=showSidebar() class="hideSidebar"><a href="#" aria-label="Open Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
         </nav>
         <h1 class="page-heading">Portfolio</h1>
-        <div class="portfolio-page-content">
+        <div class="portfolio-page-content" id="main-content">
             <img src="images/portfolio-img.png" alt="portfolio-img" class="portfolio-img" id="portfolio-img">
-            <p>The iTunes icon was reimagined in 2024 for an application called LionSphere Connect, which marked Apple’s
+            <p id="first-work">The iTunes icon was reimagined in 2024 for an application called LionSphere Connect, which marked Apple’s
                 bold return to music-centric innovation. This app was designed to merge streaming, music management, and
                 social sharing into one cohesive platform. The new icon featured a sleek, stylized lion head within a
                 glowing sphere, symbolizing leadership, connectivity, and the enduring power of music. Released
                 alongside a suite of updates to Apple’s digital ecosystem, LionSphere Connect aimed to redefine the way
                 users interacted with their favorite media.</p>
-                <img src="images/lion-portfolio-img.svg" alt="portfolio-sec-img" class="portfolio-sec-img"
-            id="portfolio-sec-img">
-        <p>This project showcases a website I designed and developed for "My Coffee House," a fictional coffee shop
-            concept. The site features a warm, inviting design that reflects the cozy atmosphere of a local coffee shop.
-            It includes a responsive layout, an interactive menu, and sections highlighting the shop's story, signature
-            blends, and community focus. Created with modern web technologies, the project demonstrates my ability to
-            craft engaging and functional websites tailored to brand identities.</p>
+            <img src="images/lion-portfolio-img.svg" alt="portfolio-sec-img" class="portfolio-sec-img"
+                id="portfolio-sec-img">
+            <p id="second-work">This project showcases a website I designed and developed for "My Coffee House," a fictional coffee shop
+                concept. The site features a warm, inviting design that reflects the cozy atmosphere of a local coffee
+                shop.
+                It includes a responsive layout, an interactive menu, and sections highlighting the shop's story,
+                signature
+                blends, and community focus. Created with modern web technologies, the project demonstrates my ability
+                to
+                craft engaging and functional websites tailored to brand identities.</p>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo" id="contentinfo">
         <h3>&copy2024 Rodion Varlamov</h3>
         <section class="socials-footer">
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Instagram Profile">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://twitter.com/" target="_blank" aria-label="Visit Twitter Profile">
                 <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="https://www.linkedin.ca/" target="_blank">
+            <a href="https://www.linkedin.ca/" target="_blank" aria-label="Visit LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </section>

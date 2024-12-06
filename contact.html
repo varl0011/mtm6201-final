@@ -16,32 +16,45 @@
 
 <body>
     <main>
-        <nav role="navigation">
-            <header role="banner">
-                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
+        <nav role="navigation" aria-label="Main Navigation">
+            <header role="banner" aria-label="Site Banner">
+                <a href="#main-content" class="skip-links">skip navigation</a>
+                <a href="#form" class="skip-links">go to form</a>
+                <a href="#footer" class="skip-links">go to footer</a>
+
+                <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo" id="logo"></a>
             </header>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li class="hideSidebar"><a href="index.html">Home</a></li>
-                    <li class="hideSidebar"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="hideSidebar"><a href="about.html">About</a></li>
-                    <li class="hideSidebar"><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul>
-                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                    <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="hideOnMobile"><a href="about.html">About</a></li>
-                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-                    <li onclick=showSidebar() class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
+            <ul class="sidebar" role="menu" aria-label="Sidebar Navigation">
+                <li onclick=hideSidebar() role="menuitem"><a href="#" aria-label="Close Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="hideSidebar" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideSidebar" role="menuitem"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul role="menubar" aria-label="Desktop Navigation">
+                <li class="hideOnMobile" role="menuitem"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="about.html">About</a></li>
+                <li class="hideOnMobile" role="menuitem"><a href="contact.html">Contact</a></li>
+                <li onclick=showSidebar() class="hideSidebar"><a href="#" aria-label="Open Menu"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                            fill="#343434">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
         </nav>
         <h1 class="page-heading">Contact</h1>
-        <div class="contact-page-content">
+        <div class="contact-page-content" id="main-content">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.023147608896!2d-75.75511010000001!3d45.348344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07fde3c9a467%3A0xb368c3f179109015!2sAlgonquin%20College%20Building%20T%2C%20Woodroffe%20Avenue%2C%20Nepean%2C%20ON!5e0!3m2!1sen!2sca!4v1733122070774!5m2!1sen!2sca"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <section class="form-contact">
+            <section class="form-contact" id="form">
                 <form action="#">
                     <div class="form-field">
                         <label for="name">Full Name</label>
@@ -60,7 +73,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo" id="footer">
         <h3>&copy2024 Rodion Varlamov</h3>
         <section class="socials-footer">
             <a href="https://www.instagram.com/" target="_blank">
