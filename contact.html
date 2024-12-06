@@ -20,17 +20,20 @@
             <header role="banner">
                 <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" id="logo"></a>
             </header>
-            <div class="dropdown-menu-btn">
-                <div class="dropdown">
-                    <button><img src="images/dropdown.png" alt="dropdown-icon" class="dropdown-icon"></button>
-                    <div class="content" role="menu">
-                        <a href="index.html" role="menuitem">Home</a>
-                        <a href="portfolio.html" role="menuitem">Portfolio</a>
-                        <a href="about.html" role="menuitem">About</a>
-                        <a href="contact.html" role="menuitem">Contact</a>
-                    </div>
-                </div>
-            </div>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li class="hideSidebar"><a href="index.html">Home</a></li>
+                    <li class="hideSidebar"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="hideSidebar"><a href="about.html">About</a></li>
+                    <li class="hideSidebar"><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li onclick=showSidebar() class="hideSidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#343434"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
         </nav>
         <h1 class="page-heading">Contact</h1>
         <div class="contact-page-content">
@@ -78,6 +81,17 @@
             <a href="contact.html">Contact</a>
         </section>
     </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
